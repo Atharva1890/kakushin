@@ -1,0 +1,100 @@
+/* Volunteer.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9ff;
+}
+
+.volunteer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.volunteer-header {
+  background: #24356f;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.volunteer-header h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.volunteer-header nav a {
+  color: #a2cbf7;
+  margin-left: 2rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.volunteer-header nav a:hover {
+  color: #fff;
+}
+
+.volunteer-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.volunteer-card h2 {
+  color: #1a237e;
+  margin-bottom: 1rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"], input[type="date"], input[type="time"], input[type="file"] {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.qr-preview {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.note {
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.rewards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.reward-item {
+  background: #f0f4ff;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  flex: 1;
+  min-width: 200px;
+}

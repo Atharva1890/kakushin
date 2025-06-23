@@ -3,26 +3,40 @@
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
-  color: #f9fafb;
+  background: white;
+  color: #1b83eb;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-logo {
+  height: 48px;
+  width: 48px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
 header {
-  background: rgba(13, 42, 80, 0.85);
-  padding: 16px 32px;
+  width: 100%;
+  background: rgba(13, 42, 80, 0.95);
+  padding: 16px 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-header .logo {
+header .logo h1 {
   font-weight: 900;
-  font-size: 1.8rem;
-  letter-spacing: 0.06em;
+  font-size: 2rem;
+  margin: 0;
   background: linear-gradient(135deg, #8b5cf6, #06b6d4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -30,15 +44,16 @@ header .logo {
 
 nav {
   display: flex;
-  gap: 24px;
+  gap: 32px;
+  align-items: center;
 }
 
 nav a {
-  color: #c7d2fecc;
+  color: white;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
-  padding: 6px 8px;
+  padding: 8px 12px;
   border-radius: 8px;
   transition: background-color 0.3s;
 }
@@ -73,11 +88,11 @@ section.card h2 {
   font-weight: 900;
   font-size: 1.5rem;
   margin-bottom: 16px;
-  color: #e0e7ff;
+  color: #071f61;
 }
 
 section.card p {
-  color: #d1d5db;
+  color: #6ea6f9;
   font-size: 1rem;
   margin-bottom: 20px;
   line-height: 1.5;
@@ -126,11 +141,28 @@ footer {
   border-top: 1px solid rgba(103, 80, 164, 0.6);
 }
 
+/* Mobile view adjustments */
 @media(max-width: 639px) {
   nav {
-    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    align-items: flex-start;
+    margin-top: 12px;
   }
+
   header {
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .logo h1 {
+    font-size: 1.6rem;
+  }
+
+  .app-logo {
+    height: 40px;
+    width: 40px;
   }
 }
